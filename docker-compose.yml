@@ -7,8 +7,6 @@ services:
       dockerfile: Dockerfile
     container_name: laravel_app
     restart: unless-stopped
-    ports:
-      - "8000:8000"
     environment:
       DB_HOST: db
       DB_PORT: 5432
@@ -17,8 +15,21 @@ services:
       DB_PASSWORD: secret
       APP_ENV: local
       APP_DEBUG: true
+    volumes:
+      - ./turismo-backend:/var/www
     depends_on:
       - db
+
+  nginx:
+    image: nginx:stable
+    container_name: nginx_laravel
+    ports:
+      - "8000:80"
+    volumes:
+      - ./turismo-backend:/var/www
+      - ./turismo-backend/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - app
 
   db:
     image: postgres:15
