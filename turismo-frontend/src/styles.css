@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Default light theme variables */
+  :root {
+    --color-bg-primary: 249 250 251; /* bg-gray-50 */
+    --color-bg-secondary: 255 255 255; /* bg-white */
+    --color-text-primary: 17 24 39; /* text-gray-900 */
+    --color-text-secondary: 75 85 99; /* text-gray-600 */
+  }
+
+  /* Dark theme variables */
+  .dark {
+    --color-bg-primary: 17 24 39; /* bg-gray-900 */
+    --color-bg-secondary: 31 41 55; /* bg-gray-800 */
+    --color-text-primary: 255 255 255; /* text-white */
+    --color-text-secondary: 209 213 219; /* text-gray-300 */
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 transition-all duration-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600;
+  }
+
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 dark:bg-gray-800 dark:border-gray-700 dark:text-white;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300;
+  }
+
+  .form-error {
+    @apply text-red-600 text-sm mt-1 dark:text-red-400;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 dark:bg-gray-800 dark:text-white;
+  }
+
+  /* Dropdown menu customization */
+  .max-h-80 {
+    max-height: 20rem;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.5);
+    border-radius: 20px;
+  }
+
+  .overflow-y-auto .mb-1 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Debugging helper - add a visible indicator when dark mode is active */
+.dark::before {
+  content: 'Dark Mode';
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.7;
+}

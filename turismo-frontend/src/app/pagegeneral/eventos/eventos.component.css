@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .v71_49 {
+    width: 100%;
+    height: 4692px;
+    background: rgba(255,244,236,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .v71_50, .v71_51, .v71_52, .v71_53, .v71_54 {
+    color: rgba(0,0,0,1);
+    font-family: 'Myanmar Sans Pro', sans-serif;
+    font-weight: regular;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .v71_50 {
+    position: absolute;
+    top: 40px;
+    left: 110px;
+  }
+
+  .v71_51 {
+    position: absolute;
+    top: 47px;
+    left: 607px;
+  }
+
+  .v71_52 {
+    position: absolute;
+    top: 45px;
+    left: 762px;
+  }
+
+  .v71_53 {
+    position: absolute;
+    top: 45px;
+    left: 980px;
+  }
+
+  .v71_54 {
+    position: absolute;
+    top: 47px;
+    left: 433px;
+  }
+
+  .v71_55, .v71_57, .v71_58, .v71_60, .v71_61, .v71_62, .v71_63, .v71_64 {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .v71_55 {
+    background: rgba(193,68,14,1);
+    position: absolute;
+    top: 15px;
+    left: 3px;
+  }
+
+  .v71_57 {
+    background: #aaa;
+    position: absolute;
+    top: 40px;
+    left: 276px;
+  }
+
+  .v71_58 {
+    background: #aaa;
+    position: absolute;
+    top: 37px;
+    left: 401px;
+  }
+
+  .v71_60 {
+    background: #aaa;
+    position: absolute;
+    top: 40px;
+    left: 729px;
+  }
+
+  .v71_61 {
+    background: #aaa;
+    position: absolute;
+    top: 45px;
+    left: 945px;
+  }
+
+  .v71_62, .v71_63 {
+    background: #eee;
+    opacity: 0.5;
+    position: absolute;
+    top: 282px;
+    left: 1387px;
+  }
+
+  .v71_64 {
+    background: rgba(193,68,14,1);
+    opacity: 1;
+    position: absolute;
+    top: 4452px;
+    left: 0px;
+  }
+
+  .v71_65, .v71_67, .v71_70, .v71_71 {
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+
+  .v71_65 {
+    position: absolute;
+    top: 4470px;
+    left: 20px;
+  }
+
+  .v71_67 {
+    position: absolute;
+    top: 545px;
+    left: 244px;
+  }
+
+  .v71_70 {
+    position: absolute;
+    top: 808px;
+    left: 78px;
+  }

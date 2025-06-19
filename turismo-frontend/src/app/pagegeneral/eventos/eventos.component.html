@@ -1,0 +1,140 @@
+<!-- Imagen destacada con overlay -->
+<div class="relative w-full h-[60vh] overflow-hidden bg-gray-100 dark:bg-gray-900">
+  <img src="https://consultasenlinea.mincetur.gob.pe/fichaInventario/foto.aspx?cod=471157" alt="Península de Capachica"
+    class="w-full h-full object-cover absolute inset-0 z-10" />
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70 z-20"></div>
+  <div class="absolute inset-0 flex items-center justify-center text-center z-30 px-6">
+    <div class="max-w-4xl">
+      <h1 class="text-2xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+        ¡Capachica te espera con grandes eventos para toda la familia!
+      </h1>
+      <p class="text-lg md:text-xl text-white mb-4 drop-shadow-md">
+        La Municipalidad Distrital de Capachica invita a toda la población y visitantes a ser parte de las actividades
+        especiales que se llevarán a cabo en nuestro querido distrito. Vive con nosotros momentos de alegría, tradición
+        y cultura:
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Evento destacado -->
+<section *ngIf="eventoDestacado" class="bg-blue-200 dark:bg-gray-800 text-gray-800 dark:text-white py-8">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+    <div class="mr-8 mb-6 md:mb-0">
+      <img [src]="eventoDestacado.imagen" [alt]="eventoDestacado.titulo"
+        class="w-full md:w-110 h-69 object-cover rounded-lg shadow-xl">
+    </div>
+    <div class="text-center md:text-left">
+      <h2 class="text-3xl font-bold mb-4 text-blue-700 dark:text-pink-400">{{ eventoDestacado.titulo }}</h2>
+      <p class="text-xl mb-6">{{ eventoDestacado.descripcion }}</p>
+      <p class="text-lg mb-6">Fecha: {{ eventoDestacado.fecha }}</p>
+      <a [routerLink]="['/eventos/eventosdetalle', eventoDestacado.id]"
+        class="inline-block text-white bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+        Más Información
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Filtros -->
+<section class="bg-gray-50 dark:bg-gray-900 py-6">
+  <div class="max-w-6xl mx-auto px-4 flex flex-wrap gap-4 items-center justify-between">
+
+    <!-- Filtro Año -->
+    <div class="flex items-center space-x-4">
+      <label for="anio" class="text-lg text-gray-700 dark:text-gray-300">Año:</label>
+      <select id="anio" [(ngModel)]="filtroAnio" (change)="actualizarCalendario()"
+        class="border rounded-lg px-4 py-2 dark:bg-gray-700 dark:text-white">
+        <option value="todos">Todos</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+      </select>
+    </div>
+
+    <!-- Filtro Mes -->
+    <div class="flex items-center space-x-4">
+      <label for="mes" class="text-lg text-gray-700 dark:text-gray-300">Mes:</label>
+      <select id="mes" [(ngModel)]="filtroMes" (change)="actualizarCalendario()"
+        class="border rounded-lg px-4 py-2 dark:bg-gray-700 dark:text-white">
+        <option value="proximos">Próximos</option>
+        <option value="enero">Enero</option>
+        <option value="febrero">Febrero</option>
+        <!-- Agrega más si deseas -->
+      </select>
+    </div>
+
+    <!-- Filtro Tipo de evento -->
+    <div class="flex items-center space-x-4">
+      <label for="tipo_evento" class="text-lg text-gray-700 dark:text-gray-300">Tipo de evento:</label>
+      <select id="tipo_evento" [(ngModel)]="filtroTipo" (change)="actualizarCalendario()"
+        class="border rounded-lg px-4 py-2 dark:bg-gray-700 dark:text-white">
+        <option value="todos">Todos</option>
+        <option value="culturales">Culturales</option>
+        <option value="deporte">Deporte</option>
+        <option value="gastronomia">Gastronomía</option>
+      </select>
+    </div>
+
+    <!--<button (click)="mostrarModalCalendario = true"
+      class="p-3 rounded-full shadow-md transition" title="Ver calendario">
+      <i class="fa-solid fa-calendar-days text-xl"></i>
+    </button>-->
+
+    <button type="button"
+      class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2"
+      (click)="mostrarModalCalendario = true">
+      <svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+        fill="currentColor" role="img" style="width: 1.25rem; height: 1.25rem;">
+        <path d="M7 11h5v5H7z" />
+        <path fill-rule="evenodd"
+          d="M3 4a1 1 0 011-1h1V1h2v2h6V1h2v2h1a1 1 0 011 1v16a2 2 0 01-2 2H5a2 2 0 01-2-2V4zm1 2v12h14V6H4z"
+          clip-rule="evenodd" />
+      </svg>
+    </button>
+
+    <!-- Modal flotante -->
+    <div *ngIf="mostrarModalCalendario" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+      <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative">
+        <button (click)="openCalendar()" class="absolute top-2 right-2 text-gray-500 hover:text-red-600 text-xl">
+          &times;
+        </button>
+        <h2 class="text-xl font-bold mb-4">Calendario de eventos</h2>
+
+        <!-- Aquí puedes poner tu contenido de calendario -->
+        <p>Contenido del calendario aquí...</p>
+        <mwl-calendar-month-view [viewDate]="viewDate" [events]="calendarEvents">
+        </mwl-calendar-month-view>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Listado de eventos -->
+<section class="py-8 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Todos los eventos</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div *ngFor="let evento of eventos" class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+        <img [src]="evento.imagen" [alt]="evento.titulo" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white">{{ evento.titulo }}</h3>
+          <p class="text-gray-600 dark:text-gray-300 line-clamp-3">{{ evento.descripcion }}</p>
+          <div class="mt-2 flex items-center space-x-2">
+            <span class="text-gray-500 dark:text-gray-400">Fecha: {{ evento.fecha }}</span>
+          </div>
+          <div class="mt-4">
+            <a [routerLink]="['/eventos/eventosdetalle', evento.id]"
+              class="inline-block text-white bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+              Más Información
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Si no hay eventos disponibles -->
+    <div *ngIf="eventos.length === 0" class="text-center mt-8 text-gray-600 dark:text-gray-300">
+      <p>No hay eventos disponibles para los filtros seleccionados.</p>
+    </div>
+  </div>
+</section>

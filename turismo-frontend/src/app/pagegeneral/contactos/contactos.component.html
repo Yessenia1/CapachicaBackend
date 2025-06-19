@@ -1,0 +1,135 @@
+<section class="relative bg-[#fdf4ec] text-gray-800 py-20 font-sans">
+    <!-- Imagen de fondo solo para encabezado -->
+    <div class="absolute top-0 left-0 right-0 h-[550px] z-0">
+      <img src="https://img.freepik.com/fotos-premium/vista-sobre-paisaje-lago-titicaca_653449-9944.jpg"
+           alt="Encabezado"
+           class="w-full h-full object-cover">
+    </div>
+  
+    <!-- Encabezado sobre imagen -->
+    <div class="relative z-10 text-center container mx-auto px-6 py-32">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-2xl font-serif mb-4 tracking-wide">
+        Turismo Comunitario en Capachica
+      </h1>
+      <p class="text-xl md:text-2xl text-white font-medium italic drop-shadow-md tracking-wide">
+        Un viaje auténtico hacia nuestras raíces.
+      </p>
+    </div>
+  
+    <!-- Fondo suave para contenido restante -->
+    <div class="relative z-10 bg-[#fdf4ec] mt-[-100px] pt-20">
+      <!-- Planes Turísticos -->
+      <div class="text-center animate-fade-in-up">
+        <h2 class="text-4xl font-bold text-amber-500 mb-4 font-serif">Planes Turísticos en Capachica</h2>
+        <p class="text-lg max-w-3xl mx-auto mb-12">
+          Descubre las experiencias auténticas que ofrecen nuestras familias anfitrionas: hospedaje, cultura, agricultura, talleres y naturaleza en su máxima expresión.
+        </p>
+        
+  
+        <!-- Imagen de fondo detrás del encabezado -->
+        <div class="absolute inset-0 z-0">
+          <img src="https://img.freepik.com/fotos-premium/vista-sobre-paisaje-lago-titicaca_653449-9944.jpg" alt="Fondo Encabezado" class="w-full h-full object-cover opacity-20 blur-sm">
+        </div>
+  
+        <!-- Imagen de fondo adicional -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/e7/29/52/capachica-peninsula.jpg?w=2000&h=-1&s=1"
+            alt="Fondo"
+            class="w-full h-full object-cover opacity-30 blur-sm"
+          />
+        </div>
+  
+        <!-- Planes estilo tarjetas como Y Tú Qué Planes -->
+        <div class="relative z-10 container mx-auto px-6 py-16">
+          <div class="grid gap-10 md:grid-cols-3">
+            <!-- Tarjeta 1 -->
+            <div [routerLink]="['/reservas', 'quispe']" class="block rounded-2xl overflow-hidden shadow-lg relative group hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/23/50/19/capachica-peninsula.jpg?w=2000&h=-1&s=1" class="w-full h-64 object-cover">
+              <div class="absolute top-4 left-4 bg-teal-600 text-white px-3 py-1 rounded-full text-xs font-bold">Feriados</div>
+              <div class="absolute bottom-4 left-4 text-white">
+                <div class="text-yellow-400 font-semibold text-sm">04 Días / 03 Noches</div>
+                <h3 class="text-xl font-bold">Tour Familia Quispe</h3>
+              </div>
+              <div class="absolute bottom-0 right-0 bg-yellow-400 px-4 py-2 text-right rounded-tl-lg">
+                <div class="text-blue-900 text-lg font-bold">S/ 100</div>
+                <div class="text-sm text-orange-800 italic line-through">Antes: S/ 120</div>
+              </div>
+            </div>
+  
+            <!-- Tarjeta 2 -->
+            <div [routerLink]="['/reservas', '2']" class="block rounded-2xl overflow-hidden shadow-lg relative group hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/b8/a3/3f/img-20190419-061919804.jpg?w=1100&h=-1&s=1" class="w-full h-64 object-cover">
+              <div class="absolute top-4 left-4 bg-orange-600 text-white px-3 py-1 rounded-full text-xs font-bold">02 Días / 01 Noche</div>
+              <div class="absolute bottom-4 left-4 text-white">
+                <div class="text-yellow-400 font-semibold text-sm">Tour Familia Mamani</div>
+                <h3 class="text-xl font-bold">Vida Agrícola</h3>
+              </div>
+              <div class="absolute bottom-0 right-0 bg-yellow-400 px-4 py-2 text-right rounded-tl-lg">
+                <div class="text-blue-900 text-lg font-bold">S/ 80</div>
+                <div class="text-sm text-orange-800 italic line-through">Antes: S/ 100</div>
+              </div>
+            </div>
+  
+            <!-- Tarjeta 3 -->
+            <div [routerLink]="['/reservas', '3']" class="block rounded-2xl overflow-hidden shadow-lg relative group hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/b8/9e/9e/capachica-peninsula.jpg?w=1100&h=-1&s=1" class="w-full h-64 object-cover">
+              <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold">03 Días / 02 Noches</div>
+              <div class="absolute bottom-4 left-4 text-white">
+                <div class="text-yellow-400 font-semibold text-sm">Tour Familia Ccopa</div>
+                <h3 class="text-xl font-bold">Artesanía y Cultura</h3>
+              </div>
+               <div class="absolute bottom-0 right-0 bg-yellow-400 px-4 py-2 text-right rounded-tl-lg">
+                <div class="text-blue-900 text-lg font-bold">S/ 90</div>
+                <div class="text-sm text-orange-800 italic line-through">Antes: S/ 110</div>
+              </div>
+            </div>
+  
+            <!-- Tarjeta 4 -->
+            <div [routerLink]="['/reservas', '4']" class="block rounded-2xl overflow-hidden shadow-lg relative group hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1e/63/c8/img-7947-largejpg.jpg?w=800&h=-1&s=1" class="w-full h-64 object-cover">
+              <div class="absolute top-4 left-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">02 Días / 02 Noches</div>
+              <div class="absolute bottom-4 left-4 text-white">
+                <div class="text-yellow-400 font-semibold text-sm">Tour Familia Huanca</div>
+                <h3 class="text-xl font-bold">Pesca Artesanal</h3>
+              </div>
+              <div class="absolute bottom-0 right-0 bg-yellow-400 px-4 py-2 text-right rounded-tl-lg">
+                <div class="text-blue-900 text-lg font-bold">S/ 85</div>
+                <div class="text-sm text-orange-800 italic line-through">Antes: S/ 100</div>
+              </div>
+            </div>
+  
+            <!-- Tarjeta 5 -->
+            <div [routerLink]="['/reservas', '5']" class="block rounded-2xl overflow-hidden shadow-lg relative group hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/b7/0e/4e/capachica-peninsula.jpg?w=2000&h=-1&s=1" class="w-full h-64 object-cover">
+              <div class="absolute top-4 left-4 bg-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold">01 Día</div>
+              <div class="absolute bottom-4 left-4 text-white">
+                <div class="text-yellow-400 font-semibold text-sm">Tour Familia Condori</div>
+                <h3 class="text-xl font-bold">Cocina Andina</h3>
+              </div>
+              <div class="absolute bottom-0 right-0 bg-yellow-400 px-4 py-2 text-right rounded-tl-lg">
+                <div class="text-blue-900 text-lg font-bold">S/ 60</div>
+                <div class="text-sm text-orange-800 italic line-through">Antes: S/ 80</div>
+              </div>
+            </div>
+  
+            <!-- Tarjeta 6 -->
+            <div [routerLink]="['/reservas', '6']" class="block rounded-2xl overflow-hidden shadow-lg relative group hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/23/50/d9/capachica-peninsula.jpg?w=1000&h=-1&s=1" class="w-full h-64 object-cover">
+              <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">03 Días / 02 Noches</div>
+              <div class="absolute bottom-4 left-4 text-white">
+                <div class="text-yellow-400 font-semibold text-sm">Tour Familia Taype</div>
+                <h3 class="text-xl font-bold">Ruta de Apu</h3>
+              </div>
+              <div class="absolute bottom-0 right-0 bg-yellow-400 px-4 py-2 text-right rounded-tl-lg">
+                <div class="text-blue-900 text-lg font-bold">S/ 120</div>
+                <div class="text-sm text-orange-800 italic line-through">Antes: S/ 140</div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
