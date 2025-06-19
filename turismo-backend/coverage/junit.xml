@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="E:\capachica proyecto web\capachica-project\turismo-backend\phpunit.xml" tests="98" assertions="333" errors="19" failures="6" skipped="0" time="16.254962">
+    <testsuite name="Unit" tests="52" assertions="122" errors="7" failures="0" skipped="0" time="8.053586">
+      <testsuite name="Tests\Unit\ExampleTest" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.093739">
+        <testcase name="test_that_true_is_true" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.093739"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Models\AsociacionTest" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" tests="20" assertions="56" errors="0" failures="0" skipped="0" time="3.369547">
+        <testcase name="puede_crear_asociacion_con_datos_validos" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="27" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="5" time="1.183700"/>
+        <testcase name="fillable_permite_campos_correctos" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="52" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="3" time="0.135189"/>
+        <testcase name="casts_convierte_tipos_correctamente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="77" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="6" time="0.103139"/>
+        <testcase name="relacion_municipalidad_funciona_correctamente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="97" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="3" time="0.104278"/>
+        <testcase name="relacion_emprendedores_funciona_correctamente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="114" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="4" time="0.132817"/>
+        <testcase name="imagen_url_attribute_retorna_null_cuando_no_hay_imagen" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="138" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.118748"/>
+        <testcase name="imagen_url_attribute_retorna_url_completa_si_es_url_externa" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="154" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.111016"/>
+        <testcase name="appends_incluye_imagen_url_en_array" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="171" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.119454"/>
+        <testcase name="appends_incluye_imagen_url_en_json" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="187" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.135875"/>
+        <testcase name="tabla_correcta_es_utilizada" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="204" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.114953"/>
+        <testcase name="primary_key_es_id_por_defecto" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="217" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.131815"/>
+        <testcase name="timestamps_estan_habilitados" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="230" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.098492"/>
+        <testcase name="puede_actualizar_campos_individuales" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="243" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.103043"/>
+        <testcase name="puede_eliminar_asociacion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="259" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="2" time="0.103560"/>
+        <testcase name="scope_queries_funcionan_correctamente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="276" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="4" time="0.106357"/>
+        <testcase name="maneja_valores_nulos_correctamente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="301" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="7" time="0.101029"/>
+        <testcase name="validacion_email_formato_en_base_de_datos" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="325" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="2" time="0.101128"/>
+        <testcase name="coordenadas_se_almacenan_como_float" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="339" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="4" time="0.113971"/>
+        <testcase name="estado_se_almacena_como_boolean" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="356" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="4" time="0.152249"/>
+        <testcase name="created_at_y_updated_at_se_establecen_automaticamente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="377" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="4" time="0.098734"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Models\CategoriaTest" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" tests="20" assertions="36" errors="7" failures="0" skipped="0" time="2.797790">
+        <testcase name="puede_crear_categoria_con_datos_validos" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="17" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="5" time="0.135594"/>
+        <testcase name="fillable_permite_campos_correctos" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="38" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="4" time="0.085445"/>
+        <testcase name="relacion_servicios_funciona_correctamente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="60" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="0" time="0.120881">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\Models\CategoriaTest::relacion_servicios_funciona_correctamente&#13;
+Illuminate\Database\QueryException: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor nulo en la columna «nombre» de la relación «servicios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1, null, null, null, null, t, 2025-06-01 01:58:17, 2025-06-01 01:58:17, 1, null, null, null). (Connection: pgsql, SQL: insert into "servicios" ("updated_at", "created_at") values (2025-06-01 01:58:17, 2025-06-01 01:58:17) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:306
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php:64</error>
+        </testcase>
+        <testcase name="relacion_servicios_incluye_timestamps" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="82" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="0" time="0.102922">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\Models\CategoriaTest::relacion_servicios_incluye_timestamps&#13;
+Illuminate\Database\QueryException: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor nulo en la columna «nombre» de la relación «servicios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (2, null, null, null, null, t, 2025-06-01 01:58:17, 2025-06-01 01:58:17, 1, null, null, null). (Connection: pgsql, SQL: insert into "servicios" ("updated_at", "created_at") values (2025-06-01 01:58:17, 2025-06-01 01:58:17) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php:86</error>
+        </testcase>
+        <testcase name="puede_asociar_y_desasociar_servicios" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="98" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="0" time="0.224445">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\Models\CategoriaTest::puede_asociar_y_desasociar_servicios&#13;
+Illuminate\Database\QueryException: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor nulo en la columna «nombre» de la relación «servicios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (3, null, null, null, null, t, 2025-06-01 01:58:17, 2025-06-01 01:58:17, 1, null, null, null). (Connection: pgsql, SQL: insert into "servicios" ("updated_at", "created_at") values (2025-06-01 01:58:17, 2025-06-01 01:58:17) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php:102</error>
+        </testcase>
+        <testcase name="puede_sincronizar_servicios" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="122" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="0" time="0.105951">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\Models\CategoriaTest::puede_sincronizar_servicios&#13;
+Illuminate\Database\QueryException: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor nulo en la columna «nombre» de la relación «servicios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (4, null, null, null, null, t, 2025-06-01 01:58:17, 2025-06-01 01:58:17, 1, null, null, null). (Connection: pgsql, SQL: insert into "servicios" ("updated_at", "created_at") values (2025-06-01 01:58:17, 2025-06-01 01:58:17) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:306
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php:126</error>
+        </testcase>
+        <testcase name="tabla_correcta_es_utilizada" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="147" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="1" time="0.234806"/>
+        <testcase name="primary_key_es_id_por_defecto" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="160" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="1" time="0.148655"/>
+        <testcase name="timestamps_estan_habilitados" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="173" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="1" time="0.099474"/>
+        <testcase name="puede_actualizar_campos_individuales" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="186" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="1" time="0.096546"/>
+        <testcase name="puede_eliminar_categoria" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="201" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="2" time="0.202174"/>
+        <testcase name="eliminar_categoria_elimina_relaciones_con_servicios" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="216" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="0" time="0.097075">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\Models\CategoriaTest::eliminar_categoria_elimina_relaciones_con_servicios&#13;
+Illuminate\Database\QueryException: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor nulo en la columna «nombre» de la relación «servicios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (5, null, null, null, null, t, 2025-06-01 01:58:18, 2025-06-01 01:58:18, 1, null, null, null). (Connection: pgsql, SQL: insert into "servicios" ("updated_at", "created_at") values (2025-06-01 01:58:18, 2025-06-01 01:58:18) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:306
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php:220</error>
+        </testcase>
+        <testcase name="puede_buscar_categorias_por_nombre" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="233" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="2" time="0.096777"/>
+        <testcase name="maneja_valores_nulos_correctamente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="249" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="3" time="0.101318"/>
+        <testcase name="created_at_y_updated_at_se_establecen_automaticamente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="265" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="4" time="0.150942"/>
+        <testcase name="puede_obtener_cantidad_de_servicios_asociados" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="278" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="0" time="0.151824">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\Models\CategoriaTest::puede_obtener_cantidad_de_servicios_asociados&#13;
+Illuminate\Database\QueryException: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor nulo en la columna «nombre» de la relación «servicios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (6, null, null, null, null, t, 2025-06-01 01:58:19, 2025-06-01 01:58:19, 1, null, null, null). (Connection: pgsql, SQL: insert into "servicios" ("updated_at", "created_at") values (2025-06-01 01:58:19, 2025-06-01 01:58:19) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:306
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php:282</error>
+        </testcase>
+        <testcase name="puede_verificar_si_tiene_servicios_asociados" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="293" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="0" time="0.108182">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\Models\CategoriaTest::puede_verificar_si_tiene_servicios_asociados&#13;
+Illuminate\Database\QueryException: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor nulo en la columna «nombre» de la relación «servicios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (7, null, null, null, null, t, 2025-06-01 01:58:19, 2025-06-01 01:58:19, 1, null, null, null). (Connection: pgsql, SQL: insert into "servicios" ("updated_at", "created_at") values (2025-06-01 01:58:19, 2025-06-01 01:58:19) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php:299</error>
+        </testcase>
+        <testcase name="nombre_es_requerido_para_creacion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="308" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="1" time="0.097069"/>
+        <testcase name="puede_convertir_a_array" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="319" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="7" time="0.212323"/>
+        <testcase name="puede_convertir_a_json" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Models\CategoriaTest.php" line="342" class="Tests\Unit\Models\CategoriaTest" classname="Tests.Unit.Models.CategoriaTest" assertions="4" time="0.225385"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Services\AsociacionesServiceTest" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" tests="11" assertions="29" errors="0" failures="0" skipped="0" time="1.792510">
+        <testcase name="puede_obtener_todas_las_asociaciones_paginadas" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="35" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="4" time="0.230972"/>
+        <testcase name="puede_obtener_una_asociacion_por_id" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="53" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="3" time="0.234815"/>
+        <testcase name="retorna_null_cuando_asociacion_no_existe" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="70" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="1" time="0.146910"/>
+        <testcase name="puede_obtener_asociacion_con_emprendedores" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="80" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="3" time="0.278640"/>
+        <testcase name="puede_crear_nueva_asociacion_sin_imagen" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="101" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="4" time="0.130125"/>
+        <testcase name="puede_actualizar_asociacion_existente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="129" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="5" time="0.147594"/>
+        <testcase name="retorna_null_al_actualizar_asociacion_inexistente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="158" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="1" time="0.108418"/>
+        <testcase name="puede_eliminar_asociacion_existente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="171" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="2" time="0.113626"/>
+        <testcase name="retorna_false_al_eliminar_asociacion_inexistente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="189" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="1" time="0.127962"/>
+        <testcase name="puede_obtener_asociaciones_por_municipalidad" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="199" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="4" time="0.171768"/>
+        <testcase name="maneja_excepcion_en_creacion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="226" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="1" time="0.101681"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="46" assertions="211" errors="12" failures="6" skipped="0" time="8.201376">
+      <testsuite name="Tests\Feature\Controllers\AsociacionControllerTest" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" tests="25" assertions="132" errors="0" failures="0" skipped="0" time="5.538676">
+        <testcase name="puede_listar_todas_las_asociaciones" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="66" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="54" time="0.441049"/>
+        <testcase name="puede_listar_asociaciones_con_paginacion_personalizada" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="104" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="4" time="0.332868"/>
+        <testcase name="puede_mostrar_una_asociacion_especifica" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="124" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.217607"/>
+        <testcase name="retorna_404_cuando_asociacion_no_existe" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="147" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.206358"/>
+        <testcase name="admin_puede_crear_nueva_asociacion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="161" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.238104"/>
+        <testcase name="usuario_normal_no_puede_crear_asociacion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="192" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="0.177211"/>
+        <testcase name="usuario_no_autenticado_no_puede_crear_asociacion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="210" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="0.173258"/>
+        <testcase name="falla_validacion_al_crear_asociacion_sin_datos_requeridos" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="226" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="5" time="0.197356"/>
+        <testcase name="falla_validacion_con_email_invalido" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="249" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.233793"/>
+        <testcase name="falla_validacion_con_municipalidad_inexistente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="269" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.205951"/>
+        <testcase name="admin_puede_actualizar_asociacion_existente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="288" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.189057"/>
+        <testcase name="usuario_normal_no_puede_actualizar_asociacion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="322" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="0.298691"/>
+        <testcase name="retorna_404_al_actualizar_asociacion_inexistente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="343" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.207745"/>
+        <testcase name="falla_validacion_estado_con_valor_invalido" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="365" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.227063"/>
+        <testcase name="admin_puede_eliminar_asociacion_existente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="387" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.207068"/>
+        <testcase name="usuario_normal_no_puede_eliminar_asociacion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="412" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="0.196021"/>
+        <testcase name="retorna_404_al_eliminar_asociacion_inexistente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="429" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.195689"/>
+        <testcase name="puede_obtener_emprendedores_de_asociacion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="446" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="6" time="0.198306"/>
+        <testcase name="retorna_404_al_obtener_emprendedores_de_asociacion_inexistente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="475" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.237033"/>
+        <testcase name="puede_obtener_asociaciones_por_municipalidad" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="489" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="6" time="0.189789"/>
+        <testcase name="maneja_error_interno_del_servidor" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="518" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="0.198776"/>
+        <testcase name="respuesta_json_tiene_estructura_correcta_en_exito" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="541" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="16" time="0.188447"/>
+        <testcase name="respuesta_json_tiene_estructura_correcta_en_error" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="575" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.175705"/>
+        <testcase name="imagen_url_es_correcta_cuando_hay_imagen" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="590" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.206108"/>
+        <testcase name="imagen_url_es_null_cuando_no_hay_imagen" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="610" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.199624"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Controllers\CategoriaControllerTest" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" tests="21" assertions="79" errors="12" failures="6" skipped="0" time="2.662700">
+        <testcase name="puede_listar_todas_las_categorias" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="25" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="64" time="0.181047">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CategoriaControllerTest::puede_listar_todas_las_categorias&#13;
+Failed asserting that an array has the key 'current_page'.
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\AssertableJsonString.php:301
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:894
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:41</failure>
+        </testcase>
+        <testcase name="puede_listar_categorias_con_paginacion_personalizada" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="80" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="1" time="0.147498">
+          <error type="ErrorException">Tests\Feature\Controllers\CategoriaControllerTest::puede_listar_categorias_con_paginacion_personalizada&#13;
+ErrorException: Undefined array key "per_page"
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php:256
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:100</error>
+        </testcase>
+        <testcase name="puede_mostrar_una_categoria_especifica" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="106" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="2" time="0.113011">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CategoriaControllerTest::puede_mostrar_una_categoria_especifica&#13;
+Unable to find JSON: &#13;
+&#13;
+[{
+    "id": 50,
+    "nombre": "perspiciatis",
+    "descripcion": "Ea natus voluptas odio."
+}]&#13;
+&#13;
+within response JSON:&#13;
+&#13;
+[{
+    "success": true,
+    "data": {
+        "id": 50,
+        "nombre": "perspiciatis",
+        "descripcion": "Ea natus voluptas odio.",
+        "icono_url": "https://via.placeholder.com/64x64.png/0099dd?text=aliquid",
+        "created_at": "2025-06-01T01:58:27.000000Z",
+        "updated_at": "2025-06-01T01:58:27.000000Z",
+        "servicios": []
+    }
+}].&#13;
+&#13;
+
+Failed asserting that an array has the subset Array &amp;0 [
+    'id' =&gt; 50,
+    'nombre' =&gt; 'perspiciatis',
+    'descripcion' =&gt; 'Ea natus voluptas odio.',
+].
+--- Expected
++++ Actual
+@@ @@
+     array (
+     ),
+   ),
+-  'id' =&gt; 50,
+-  'nombre' =&gt; 'perspiciatis',
+-  'descripcion' =&gt; 'Ea natus voluptas odio.',
+ )
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\Constraints\ArraySubset.php:80
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\Assert.php:36
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\AssertableJsonString.php:317
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:749
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:116</failure>
+        </testcase>
+        <testcase name="retorna_404_cuando_categoria_no_existe" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="124" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="1" time="0.095983"/>
+        <testcase name="admin_puede_crear_nueva_categoria" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="134" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.141552">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::admin_puede_crear_nueva_categoria&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Cassidy Runolfsdottir, keebler.cynthia@example.net, 2025-06-01 01:58:27, $2y$04$rKvwUiO/L72mzB4bX090kO3Lw5.y0tx//gSFAoMS771fV1w7vj4uu, +1 (757) 803-9415, Perú, 1981-02-28 00:00:00, 80378 Reichert Burg Suite 019
+Stonestad, RI 98270-6572, female, es, 1, 2025-05-12 06:45:38, fMzFYjKzDc, admin, 2025-06-01 01:58:27, 2025-06-01 01:58:27) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:137</error>
+        </testcase>
+        <testcase name="usuario_normal_no_puede_crear_categoria" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="158" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.293426">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::usuario_normal_no_puede_crear_categoria&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Prof. Kenyatta White, meredith.lynch@example.org, 2025-06-01 01:58:28, $2y$04$KT99DwoOlUTOKl3O63FASeKWg5tyWYjGJI41c8hy5VGDKfghtds5W, 240.251.9759, Perú, 1983-06-11 00:00:00, 91385 General Knolls
+East Desiree, NC 51000-5538, male, es, 1, 2025-05-27 09:59:30, EtkoJcph23, user, 2025-06-01 01:58:28, 2025-06-01 01:58:28) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:161</error>
+        </testcase>
+        <testcase name="usuario_no_autenticado_no_puede_crear_categoria" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="183" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="1" time="0.189091">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CategoriaControllerTest::usuario_no_autenticado_no_puede_crear_categoria&#13;
+Expected response status code [401] but received 201.
+Failed asserting that 201 is identical to 401.
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:159
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:195</failure>
+        </testcase>
+        <testcase name="falla_validacion_al_crear_categoria_sin_datos_requeridos" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="199" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.113180">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::falla_validacion_al_crear_categoria_sin_datos_requeridos&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Elva Rippin, scotty.okuneva@example.com, 2025-06-01 01:58:28, $2y$04$RGM9xl7NmYsRCn8NfFI7Nu6egGaZW.P5I5gbG2.TlYIgHEnp6T3Z2, (339) 745-3935, Perú, 1984-10-04 00:00:00, 81014 Medhurst Mountain
+Abernathyborough, AR 34272, male, es, 1, ?, 1yRqCimyDy, admin, 2025-06-01 01:58:28, 2025-06-01 01:58:28) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:202</error>
+        </testcase>
+        <testcase name="falla_validacion_con_icono_url_invalido" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="230" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.094048">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::falla_validacion_con_icono_url_invalido&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Jackson Bins, dare.bernita@example.org, 2025-06-01 01:58:28, $2y$04$s14tYDvLHoriyZTznQU2Hevz2ydTPs0mY2DRimE7uo1SzmUjltsiu, 479-757-0351, Perú, 1974-09-26 00:00:00, 75413 Rempel Extension Suite 955
+New Kasey, HI 95501-5327, female, es, 1, ?, 8AuxsPHQSA, admin, 2025-06-01 01:58:28, 2025-06-01 01:58:28) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:233</error>
+        </testcase>
+        <testcase name="admin_puede_actualizar_categoria_existente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="256" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.096675">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::admin_puede_actualizar_categoria_existente&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Erling Lowe, vraynor@example.com, 2025-06-01 01:58:28, $2y$04$QLJTlwP9qem5XY9egsiKquRVlmZWkTrp8ZQK5qrTcrXS7nbvWSZae, +15745103477, Perú, 1994-04-22 00:00:00, 5966 Freddy Row
+West Josiah, MD 49377-4846, male, es, 1, 2025-05-16 16:23:42, hWEro1PpHt, admin, 2025-06-01 01:58:28, 2025-06-01 01:58:28) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:259</error>
+        </testcase>
+        <testcase name="usuario_normal_no_puede_actualizar_categoria" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="280" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.093402">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::usuario_normal_no_puede_actualizar_categoria&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Dr. Albina Wisozk, vaughn.labadie@example.org, 2025-06-01 01:58:28, $2y$04$iW0ULc2BPBzpbtWlnGB7JeFMER/lDvqEMV0SQCyFbonw8fgP4tdDS, (520) 826-9863, Perú, 1970-10-03 00:00:00, 80003 Flossie Pass Apt. 272
+Lake Pamelachester, IA 91509-9594, male, es, 1, ?, bcFNmBwB3P, user, 2025-06-01 01:58:28, 2025-06-01 01:58:28) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:283</error>
+        </testcase>
+        <testcase name="retorna_404_al_actualizar_categoria_inexistente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="300" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.095657">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::retorna_404_al_actualizar_categoria_inexistente&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Mr. Kieran Hudson, althea94@example.net, 2025-06-01 01:58:28, $2y$04$hUrrPAxKJAPGjvymarUV9OKlDCQczgyapp9cAQshkr8j51HyagAOi, 1-978-868-3424, Perú, 1972-04-03 00:00:00, 135 Christine Mountain Suite 759
+East Mariannaland, AL 78568, male, es, 1, ?, g1zPSpGzMN, admin, 2025-06-01 01:58:28, 2025-06-01 01:58:28) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:303</error>
+        </testcase>
+        <testcase name="admin_puede_eliminar_categoria_existente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="316" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.099418">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::admin_puede_eliminar_categoria_existente&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Brice Rippin, karen11@example.com, 2025-06-01 01:58:28, $2y$04$XomUpxK0vP5KZvkNUIX9mu4sjKS3ej5RQRyoSMYRAJFhwFsx.4gX6, +1.347.854.0677, Perú, 1984-07-25 00:00:00, 94210 Winona Crossroad Apt. 157
+New Elnoraborough, OK 09799-5868, female, es, 1, 2025-05-03 20:24:25, pVLVTcP4fo, admin, 2025-06-01 01:58:28, 2025-06-01 01:58:28) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:319</error>
+        </testcase>
+        <testcase name="usuario_normal_no_puede_eliminar_categoria" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="333" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.095369">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::usuario_normal_no_puede_eliminar_categoria&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Vivian Ruecker DDS, augusta51@example.org, 2025-06-01 01:58:28, $2y$04$REjF56NlSWyI99xXWxVqLeUm4gEDaRQovcPx9feU/VGpsNv07puLS, 360.218.4698, Perú, 1987-07-19 00:00:00, 5770 Myra Wall Suite 064
+Tiaraville, NE 37662, female, es, 1, ?, 5HqegTICBj, user, 2025-06-01 01:58:28, 2025-06-01 01:58:28) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:336</error>
+        </testcase>
+        <testcase name="retorna_404_al_eliminar_categoria_inexistente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="352" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.094383">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::retorna_404_al_eliminar_categoria_inexistente&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Carleton Boyer, daphney.rutherford@example.org, 2025-06-01 01:58:29, $2y$04$FdO1HU2VlFpa48yjvNEIV.3OZ1OKN396YK5QJQzYCnCGKtarqB7lK, +1 (484) 634-6988, Perú, 1989-11-17 00:00:00, 9053 Howe Expressway Suite 060
+Torphyburgh, WV 06320, female, es, 1, 2025-05-21 19:56:49, ylOaDYnp01, admin, 2025-06-01 01:58:29, 2025-06-01 01:58:29) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:355</error>
+        </testcase>
+        <testcase name="puede_obtener_servicios_de_categoria" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="366" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="1" time="0.132942">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CategoriaControllerTest::puede_obtener_servicios_de_categoria&#13;
+Expected response status code [200] but received 404.
+Failed asserting that 404 is identical to 200.
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:159
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:378</failure>
+        </testcase>
+        <testcase name="retorna_404_al_obtener_servicios_de_categoria_inexistente" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="389" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="3" time="0.172907"/>
+        <testcase name="respuesta_json_tiene_estructura_correcta_en_exito" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="408" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="2" time="0.107236">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CategoriaControllerTest::respuesta_json_tiene_estructura_correcta_en_exito&#13;
+Failed asserting that an array has the key 'id'.
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\AssertableJsonString.php:301
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:894
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:418</failure>
+        </testcase>
+        <testcase name="respuesta_json_tiene_estructura_correcta_en_error" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="427" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="2" time="0.098873"/>
+        <testcase name="icono_url_es_null_cuando_no_hay_icono" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="440" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="2" time="0.103480">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CategoriaControllerTest::icono_url_es_null_cuando_no_hay_icono&#13;
+Unable to find JSON: &#13;
+&#13;
+[{
+    "icono_url": null
+}]&#13;
+&#13;
+within response JSON:&#13;
+&#13;
+[{
+    "success": true,
+    "data": {
+        "id": 54,
+        "nombre": "molestias",
+        "descripcion": "Ratione qui iusto quas deserunt dicta exercitationem nihil adipisci.",
+        "icono_url": null,
+        "created_at": "2025-06-01T01:58:29.000000Z",
+        "updated_at": "2025-06-01T01:58:29.000000Z",
+        "servicios": []
+    }
+}].&#13;
+&#13;
+
+Failed asserting that an array has the subset Array &amp;0 [
+    'icono_url' =&gt; null,
+].
+--- Expected
++++ Actual
+@@ @@
+     array (
+     ),
+   ),
+-  'icono_url' =&gt; NULL,
+ )
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\Constraints\ArraySubset.php:80
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\Assert.php:36
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\AssertableJsonString.php:317
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:749
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:450</failure>
+        </testcase>
+        <testcase name="puede_crear_categoria_sin_descripcion" file="E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php" line="456" class="Tests\Feature\Controllers\CategoriaControllerTest" classname="Tests.Feature.Controllers.CategoriaControllerTest" assertions="0" time="0.103524">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Controllers\CategoriaControllerTest::puede_crear_categoria_sin_descripcion&#13;
+Illuminate\Database\QueryException: SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «role» en la relación «users»
+LINE 1: ...guage", "active", "last_login", "remember_token", "role", "u...
+                                                             ^ (Connection: pgsql, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "phone", "country", "birth_date", "address", "gender", "preferred_language", "active", "last_login", "remember_token", "role", "updated_at", "created_at") values (Wyman Braun V, bianka28@example.com, 2025-06-01 01:58:29, $2y$04$C0GyqOyZEC.8tbh.I3DQ1.Bt5r.cbXWLHCSTyP772gDp61uoSCLVC, 1-878-727-6773, Perú, 1992-07-18 00:00:00, 395 Kshlerin Corners
+Lake Kirstin, NE 99400, male, es, 1, ?, pPVlHF0ya4, admin, 2025-06-01 01:58:29, 2025-06-01 01:58:29) returning "id")
+&#13;
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:302
+E:\capachica proyecto web\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+E:\capachica proyecto web\capachica-project\turismo-backend\tests\Feature\Controllers\CategoriaControllerTest.php:459</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
